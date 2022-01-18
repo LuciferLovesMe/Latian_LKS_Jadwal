@@ -120,6 +120,11 @@ namespace LKS_Jadwal
                 MessageBox.Show("Field must be filled", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+            else if (txtphone.TextLength < 11)
+            {
+                MessageBox.Show("Phone at least has 11 characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
 
             return true;
         }
@@ -364,6 +369,11 @@ namespace LKS_Jadwal
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void txtname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
 
         void loadgrid()

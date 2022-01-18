@@ -58,7 +58,6 @@ namespace LKS_Jadwal
             this.btndel = new System.Windows.Forms.Button();
             this.btnup = new System.Windows.Forms.Button();
             this.btninsert = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -351,7 +350,7 @@ namespace LKS_Jadwal
             // 
             this.textBox1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(879, 306);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 25);
             this.textBox1.TabIndex = 32;
@@ -364,7 +363,7 @@ namespace LKS_Jadwal
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(275, 334);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -380,7 +379,7 @@ namespace LKS_Jadwal
             this.btncancel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.ForeColor = System.Drawing.Color.White;
             this.btncancel.Location = new System.Drawing.Point(977, 575);
-            this.btncancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncancel.Margin = new System.Windows.Forms.Padding(2);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(98, 32);
             this.btncancel.TabIndex = 30;
@@ -395,7 +394,7 @@ namespace LKS_Jadwal
             this.btnsave.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
             this.btnsave.Location = new System.Drawing.Point(808, 575);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(98, 32);
             this.btnsave.TabIndex = 29;
@@ -410,7 +409,7 @@ namespace LKS_Jadwal
             this.btndel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.ForeColor = System.Drawing.Color.White;
             this.btndel.Location = new System.Drawing.Point(641, 575);
-            this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndel.Margin = new System.Windows.Forms.Padding(2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(98, 32);
             this.btndel.TabIndex = 28;
@@ -425,7 +424,7 @@ namespace LKS_Jadwal
             this.btnup.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnup.ForeColor = System.Drawing.Color.White;
             this.btnup.Location = new System.Drawing.Point(460, 575);
-            this.btnup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnup.Margin = new System.Windows.Forms.Padding(2);
             this.btnup.Name = "btnup";
             this.btnup.Size = new System.Drawing.Size(98, 32);
             this.btnup.TabIndex = 27;
@@ -440,7 +439,7 @@ namespace LKS_Jadwal
             this.btninsert.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninsert.ForeColor = System.Drawing.Color.White;
             this.btninsert.Location = new System.Drawing.Point(275, 575);
-            this.btninsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btninsert.Margin = new System.Windows.Forms.Padding(2);
             this.btninsert.Name = "btninsert";
             this.btninsert.Size = new System.Drawing.Size(98, 32);
             this.btninsert.TabIndex = 26;
@@ -448,24 +447,13 @@ namespace LKS_Jadwal
             this.btninsert.UseVisualStyleBackColor = false;
             this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(801, 197);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 19);
-            this.label16.TabIndex = 49;
-            this.label16.Text = "+62";
-            // 
             // txtphone
             // 
             this.txtphone.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtphone.Location = new System.Drawing.Point(836, 196);
-            this.txtphone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtphone.Location = new System.Drawing.Point(797, 196);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(2);
             this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(240, 25);
+            this.txtphone.Size = new System.Drawing.Size(279, 25);
             this.txtphone.TabIndex = 48;
             this.txtphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtphone_KeyPress);
             // 
@@ -484,7 +472,7 @@ namespace LKS_Jadwal
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(275, 196);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(280, 25);
             this.dateTimePicker1.TabIndex = 46;
@@ -504,7 +492,7 @@ namespace LKS_Jadwal
             // 
             this.txtaddress.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtaddress.Location = new System.Drawing.Point(796, 80);
-            this.txtaddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtaddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(280, 79);
@@ -526,7 +514,7 @@ namespace LKS_Jadwal
             this.rbfemale.AutoSize = true;
             this.rbfemale.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfemale.Location = new System.Drawing.Point(334, 136);
-            this.rbfemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbfemale.Margin = new System.Windows.Forms.Padding(2);
             this.rbfemale.Name = "rbfemale";
             this.rbfemale.Size = new System.Drawing.Size(75, 22);
             this.rbfemale.TabIndex = 42;
@@ -540,7 +528,7 @@ namespace LKS_Jadwal
             this.rbmale.AutoSize = true;
             this.rbmale.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbmale.Location = new System.Drawing.Point(275, 136);
-            this.rbmale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbmale.Margin = new System.Windows.Forms.Padding(2);
             this.rbmale.Name = "rbmale";
             this.rbmale.Size = new System.Drawing.Size(58, 22);
             this.rbmale.TabIndex = 41;
@@ -564,10 +552,11 @@ namespace LKS_Jadwal
             // 
             this.txtname.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtname.Location = new System.Drawing.Point(275, 80);
-            this.txtname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtname.Margin = new System.Windows.Forms.Padding(2);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(280, 25);
             this.txtname.TabIndex = 39;
+            this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
             // 
             // label11
             // 
@@ -598,7 +587,7 @@ namespace LKS_Jadwal
             this.btnupl.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupl.ForeColor = System.Drawing.Color.White;
             this.btnupl.Location = new System.Drawing.Point(275, 253);
-            this.btnupl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnupl.Margin = new System.Windows.Forms.Padding(2);
             this.btnupl.Name = "btnupl";
             this.btnupl.Size = new System.Drawing.Size(80, 26);
             this.btnupl.TabIndex = 51;
@@ -610,7 +599,7 @@ namespace LKS_Jadwal
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(370, 230);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(111, 67);
             this.pictureBox1.TabIndex = 52;
@@ -624,7 +613,6 @@ namespace LKS_Jadwal
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnupl);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dateTimePicker1);
@@ -648,7 +636,7 @@ namespace LKS_Jadwal
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MasterTeacher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MasterTeacher";
@@ -696,7 +684,6 @@ namespace LKS_Jadwal
         private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnup;
         private System.Windows.Forms.Button btninsert;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

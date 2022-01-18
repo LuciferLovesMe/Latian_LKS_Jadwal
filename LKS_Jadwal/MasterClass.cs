@@ -244,6 +244,11 @@ namespace LKS_Jadwal
             }
         }
 
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string com = "select * from class where name like '%" + textBox1.Text + "%'";

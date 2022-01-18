@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace LKS_Jadwal
     public partial class ManageSchedule : Form
     {
         int id, cond;
+        SqlConnection connection = new SqlConnection(Utils.conn);
         public ManageSchedule()
         {
             InitializeComponent();
@@ -154,6 +156,28 @@ namespace LKS_Jadwal
             if (dtstart.Value > dtfinish.Value)
             {
                 MessageBox.Show("Start value must be less than finish value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            SqlCommand command = new SqlCommand("select * from headerschedule where teacherid = " + comboBox2.SelectedValue + " and day = '" + comboBox4.Text + "' and time = '" + dtstart.Value.ToString("HH:mm") + "-" + dtfinish.Value.ToString("HH:mm") + "'", connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Schedule is crash with another schedule!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                connection.Close();
+                return false;
+            }
+            reader.Close();
+
+            SqlCommand sql = new SqlCommand("select * from headerschedule where classid = " + comboBox3.SelectedValue + " and day = '" + comboBox4.Text + "' and time = '" + dtstart.Value.ToString("HH:mm") + "-" + dtfinish.Value.ToString("HH:mm") + "'", connection);
+            SqlDataReader reader1 = sql.ExecuteReader();
+            reader1.Read();
+            if (reader1.HasRows)
+            {
+                MessageBox.Show("Schedule is crash with another schedule!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                connection.Close();
                 return false;
             }
 

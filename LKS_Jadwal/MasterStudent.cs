@@ -122,6 +122,11 @@ namespace LKS_Jadwal
                 MessageBox.Show("Field must be filled", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+            else if (txtphone.TextLength < 11)
+            {
+                MessageBox.Show("Phone at least has 11 characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
 
             return true;
         }
@@ -350,7 +355,7 @@ namespace LKS_Jadwal
             comboBox1.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
             comboBox1.SelectedValue = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
 
-            if(dataGridView1.SelectedRows[0].Cells[8].Value == null)
+            if(dataGridView1.SelectedRows[0].Cells[8].Value == System.DBNull.Value)
             {
                 pictureBox1.Image = null;
             }
@@ -376,6 +381,11 @@ namespace LKS_Jadwal
                 pictureBox1.Image = bmp;
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+        private void txtname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
 
         void loadgrid()

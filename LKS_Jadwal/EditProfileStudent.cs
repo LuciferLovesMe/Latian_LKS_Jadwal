@@ -83,11 +83,19 @@ namespace LKS_Jadwal
                 txtphone.Text = dataReader["nohp"].ToString();
                 dateTimePicker1.Value = Convert.ToDateTime(dataReader["dateofbirth"]);
 
-                byte[] b = (byte[])dataReader["photo"];
-                MemoryStream stream = new MemoryStream(b);
-                pictureBox1.Image = Image.FromStream(stream);
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                connection.Close();
+                if(dataReader["photo"] == System.DBNull.Value)
+                {
+                    pictureBox1.Image = null;
+                }
+                else
+                {
+                    byte[] b = (byte[])dataReader["photo"];
+                    MemoryStream stream = new MemoryStream(b);
+                    pictureBox1.Image = Image.FromStream(stream);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    connection.Close();
+
+                }
             }
             else if (role == "teacher")
             {
@@ -101,11 +109,19 @@ namespace LKS_Jadwal
                 txtphone.Text = dataReader["nohp"].ToString();
                 dateTimePicker1.Value = Convert.ToDateTime(dataReader["dateofbirth"]);
 
-                byte[] b = (byte[])dataReader["photo"];
-                MemoryStream stream = new MemoryStream(b);
-                pictureBox1.Image = Image.FromStream(stream);
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                connection.Close();
+                if (dataReader["photo"] == System.DBNull.Value)
+                {
+                    pictureBox1.Image = null;
+                }
+                else
+                {
+                    byte[] b = (byte[])dataReader["photo"];
+                    MemoryStream stream = new MemoryStream(b);
+                    pictureBox1.Image = Image.FromStream(stream);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    connection.Close();
+
+                }
             }
         }
 
